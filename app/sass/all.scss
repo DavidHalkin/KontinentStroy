@@ -1,0 +1,24 @@
+
+@import
+	'_custom_bootstrap_vatiables.scss',
+	'_custom_bootstrap_vatiables.scss',
+	'../../bower_components/bootstrap/scss/_functions.scss',
+	'../../bower_components/bootstrap/scss/_variables.scss',
+	'../../bower_components/bootstrap/scss/_mixins.scss',
+	'fonts',
+	'footer',
+	'header';
+ 
+ h1{
+ 	font-family: 'Akrobat_bold';
+ }
+ h4{
+ 	font-family: 'Akrobat_black';
+ }
+ h2{
+ 	font-family: 'Lato', sans-serif;
+ 	font-weight: normal;
+ }
+ h3{
+ 	font-weight: 700;
+ }

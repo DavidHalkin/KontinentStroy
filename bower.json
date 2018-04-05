@@ -1,0 +1,24 @@
+{
+  "name": "KontinentStroy",
+  "homepage": "https://github.com/DavidHalkin/KontinentStroy",
+  "authors": [
+    "DavidHalkin <northfire@mail.ru>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fancybox": "^3.3.0",
+    "jquery": "^3.3.1",
+    "owl.carousel": "^2.3.3",
+    "font-awesome": "fontawesome#4.7.0",
+    "bootstrap": "^4.0.0"
+  }
+}
