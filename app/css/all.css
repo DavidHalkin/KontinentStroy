@@ -3,6 +3,8 @@
 
 @font-face { font-family: 'Akrobat_black'; src: url("../fonts/Akrobat-Black.eot"); src: url("../fonts/Akrobat-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Akrobat-Black.woff2") format("woff2"), url("../fonts/Akrobat-Black.woff") format("woff"), url("../fonts/Akrobat-Black.ttf") format("truetype"), url("../fonts/Akrobat-Black.svg#Akrobat-Black") format("svg"); font-weight: 900; font-style: normal; }
 
+.footer { background: url(../images/footer.png) no-repeat 50% 50%; -webkit-background-size: cover; background-size: cover; color: #fff; }
+
 .header { background: #fff; padding: 32px 0 36px 0; }
 
 .header .btn-outline-light_orange { padding: 15px 10px; }
@@ -31,6 +33,10 @@
 
 h1, h2 { font-family: 'Akrobat_black'; }
 
+h2 { font-size: 42px; line-height: 46px; }
+
+h2 .styled_bg:before { top: -20px; }
+
 .wrapper { overflow: hidden; max-width: 1920px; width: 100%; margin: 0 auto; }
 
 .btn-outline-light_orange { font-size: 20px; font-weight: bold; color: #000; }
@@ -53,11 +59,13 @@ h1, h2 { font-family: 'Akrobat_black'; }
 
 .breadcrumbs_block ul li:last-child:after { content: none; }
 
-.banner_title { position: relative; }
+.banner_title { position: relative; -webkit-background-size: cover !important; background-size: cover !important; background-position: 50% 50% !important; min-height: 490px; }
 
-.banner_title img { width: 100%; display: block; height: auto; }
+@media (max-width: 991.98px) { .banner_title { min-height: 300px; } }
 
-.banner_title h1 { margin: 0; width: 100%; text-align: center; display: block; font-size: 56px; line-height: 58px; color: #fff; font-family: 'Akrobat_black'; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); padding: 10px; }
+@media (max-width: 767.98px) { .banner_title { min-height: 200px; } }
+
+.banner_title h1 { margin: 0; width: 100%; text-align: center; display: block; font-size: 56px; line-height: 58px; color: #fff; font-family: 'Akrobat_black'; padding: 10px; }
 
 .styled_bg { position: relative; z-index: 1; }
 
@@ -78,5 +86,103 @@ h1, h2 { font-family: 'Akrobat_black'; }
 .advantages_block [class*="col-"] p { color: #383331; padding-top: 10px; }
 
 @media (min-width: 768px) { .advantages_block [class*="col-"] p { max-width: 80%; margin: 0 auto; } }
+
+.type_block { padding-top: 157px; }
+
+.type_block h2 { margin: 0; font-size: 42px; line-height: 44px; padding-bottom: 90px; }
+
+.styled_2:before { background: url(../images/styled_bg2.png) no-repeat; width: 215px; height: 188px; left: -123px; top: -80px !important; }
+
+.box_item { border: 1px solid #ffc400; margin-bottom: 40px; padding: 55px 90px; }
+
+.box_item h3 { margin: 0; font-family: 'Akrobat_black'; font-size: 35px; line-height: 40px; padding-bottom: 32px; color: #000; }
+
+.box_item h3 a { color: #000; }
+
+.box_item h3 a:hover { text-decoration: none; color: #ffcd26; }
+
+.box_item h4 { margin: 35px 0 12px 0; color: #383331; font-size: 20px; line-height: 24px; font-weight: 700; text-transform: uppercase; }
+
+.box_item img { max-width: 100%; display: block; height: auto; margin: 0 auto; }
+
+.tabs { margin: 0; padding: 0; list-style: none; }
+
+.tabs.tabs_sub li { width: 25%; max-width: 25%; }
+
+.tabs.tabs_sub li a { text-align: center; padding-left: 10px; padding-right: 10px; padding-top: 16px; }
+
+.tabs li { width: 50%; max-width: 50%; border: 1px solid #ffc400; }
+
+.tabs li.active a { background: #ffc400; color: #fff; }
+
+.tabs li a { display: block; color: #383331; padding: 13px 0 18px 34px; }
+
+.tabs li a strong { display: block; font-size: 20px; line-height: 22px; font-weight: 700; padding-bottom: 6px; }
+
+.tabs li a span { font-size: 18px; line-height: 20px; }
+
+.tabs li a:hover { text-decoration: none; color: #fff; background: #ffc400; }
+
+.item_data { border: 1px solid #ffc400; width: 50%; margin-top: 37px; text-align: center; }
+
+.item_data span { font-size: 20px; line-height: 22px; font-weight: 700; padding: 3px; }
+
+.item_data .cost_data { padding: 17px 5px 19px 5px; }
+
+.item_data .btn-light_orange { padding-top: 12px; padding-bottom: 12px; }
+
+.cost_old { text-decoration: line-through; }
+
+.btn-light_orange { font-size: 20px; font-weight: 700; color: #fff; }
+
+.btn-light_orange:hover { background: #ffae00; border-color: #ffc400; color: #fff; }
+
+.bg_add_left { position: relative; z-index: 1; }
+
+.bg_add_left:before { content: ''; position: absolute; top: 0; right: 100%; height: 100%; width: 99999px; background: inherit; z-index: -1; }
+
+.text_box { padding-bottom: 21px; }
+
+.text_box p { margin: 0; font-size: 20px; line-height: 25px; }
+
+.text_box p strong { color: #fff; text-transform: uppercase; font-weight: 700; }
+
+.text_box h3 { margin: 0; text-transform: uppercase; font: 35px/40px 'Akrobat_black'; padding-bottom: 10px; }
+
+.useful_block h2 { margin: 0; padding-bottom: 50px; }
+
+.useful_block > .container { padding-top: 83px; padding-bottom: 70px; }
+
+.photo_gallery_block { padding-top: 146px; }
+
+.slider_photo { padding-top: 70px; }
+
+.slider_photo .holder_img + .holder_img { margin-top: 30px; }
+
+.owl-nav { text-align: center; padding-top: 40px; }
+
+.owl-nav button { width: 55px; height: 55px; text-align: center; border: 1px solid #ffcd26 !important; color: #ccc7c7 !important; margin: 0 7px; outline: none; }
+
+.owl-nav button .fa { font-size: 30px; }
+
+.owl-nav button:hover { background: #ffae00 !important; border-color: #ffae00 !important; color: #fff !important; }
+
+.main { padding-bottom: 108px; }
+
+.box_item--small { padding: 50px 60px 60px; margin-bottom: 0; }
+
+.box_item--small img { width: auto !important; }
+
+.box_item--small .item_data { width: 100%; }
+
+.etc_product_block { padding-top: 100px; }
+
+.slider_products { padding-top: 40px; }
+
+.owl-dots { text-align: center; padding-top: 30px; }
+
+.owl-dots .owl-dot { width: 18px; height: 18px; -webkit-border-radius: 50%; border-radius: 50%; background: rgba(255, 196, 0, 0.6) !important; margin: 0 5px; outline: none; display: inline-block; vertical-align: middle; }
+
+.owl-dots .owl-dot.active { background: #ffc400 !important; width: 21px; height: 21px; }
 
 /*# sourceMappingURL=all.css.map */
