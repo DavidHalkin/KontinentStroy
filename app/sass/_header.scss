@@ -1,0 +1,54 @@
+.header{
+	background: #fff;
+	padding: 32px 0 36px 0;
+	.btn-outline-light_orange{
+		padding: 15px 10px;
+	}
+}
+.btn_menu{
+	font-size: 34px;
+	
+	margin-top: 32px;
+	i{
+		cursor: pointer;
+		&:hover{
+			color: #ffc400;
+		}
+	}
+	
+}
+.logo{
+	a{
+		color: #000;
+	}
+	a:hover{
+		text-decoration: none;
+	}
+	img{
+		display: block;
+		margin: 0 auto;
+	}
+	span{
+		font-size: 25px;
+		line-height: 26px;
+		display: block;
+		margin-top: 6px;
+		font-family: 'Akrobat_black';
+	}
+}
+.etc{
+	margin-top: 4px;
+	span{
+		display: block;
+		font-size: 25px;
+		margin-bottom: 15px;
+		a{
+			color: #000;
+			font-size: 25px;
+			line-height: 27px;
+			margin-left: 10px;
+			&:hover{text-decoration: none;}
+		}
+	}
+	
+}
