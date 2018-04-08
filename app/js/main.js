@@ -4,6 +4,10 @@ $(document).ready(function(){
         $(this).parent().siblings("li").removeClass("active");
         return false;
     });
+    $(".btn_menu_js").click(function(){
+        $(this).toggleClass("active");
+        $(".drop_bar_js").toggleClass("active");
+    });
 });
 $('.owl_carousel_js').owlCarousel({
     loop:true,
@@ -28,3 +32,9 @@ $('.owl_carousel_js_2').owlCarousel({
         }
     }
 })
+$('.go_top').click(function () {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 400);
+    return false;
+});
