@@ -32,6 +32,49 @@ $('.owl_carousel_js_2').owlCarousel({
         }
     }
 })
+// slider portdolio
+$('.owl_carousel_js_3').owlCarousel({
+    loop:true,
+    margin:30,
+    responsiveClass:true,
+    nav:true,
+    dots: false,
+    navText : ["<i class='fa fa-angle-left' aria-hidden='true'></i>","<i class='fa fa-angle-right' aria-hidden='true'></i>"],
+    responsive:{
+    	0:{
+            items:1
+        },
+        500:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+// review portdolio
+$('.owl_carousel_js_4').owlCarousel({
+    loop:true,
+    margin:30,
+    responsiveClass:true,
+    nav:true,
+    dots: false,
+    navText : ["<i class='fa fa-angle-left' aria-hidden='true'></i>","<i class='fa fa-angle-right' aria-hidden='true'></i>"],
+    responsive:{
+    	0:{
+            items:1
+        },
+        400:{
+            items:2
+        },
+        1000:{
+            items:3
+        },
+        1200:{
+            items:4
+        }
+    }
+})
 $('.go_top').click(function () {
     $('body,html').animate({
         scrollTop: 0
