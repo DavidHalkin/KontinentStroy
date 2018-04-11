@@ -75,6 +75,33 @@ $('.owl_carousel_js_4').owlCarousel({
         }
     }
 })
+// clients portdolio
+$('.owl_carousel_js_5').owlCarousel({
+    loop:true,
+    margin:30,
+    responsiveClass:true,
+    nav:true,
+    dots: false,
+    // autoWidth:true,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    navText : ["<i class='fa fa-angle-left' aria-hidden='true'></i>","<i class='fa fa-angle-right' aria-hidden='true'></i>"],
+    responsive:{
+    	0:{
+            items:1
+        },
+        400:{
+            items:3
+        },
+        1000:{
+            items:4
+        },
+        1200:{
+            items:5
+        }
+    }
+})
 $('.go_top').click(function () {
     $('body,html').animate({
         scrollTop: 0

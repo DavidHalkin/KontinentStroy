@@ -137,6 +137,19 @@ h2{
 		background:url(../images/styled_bg.png) no-repeat;
 	}
 }
+.styled_bg4{
+	position: relative;
+	&:after{
+		content: '';
+		position: absolute;
+		z-index: -1;
+		top: -50px;
+		left: -25px; 
+		width: 110px;
+		height: 113px;
+		background:url(../images/styled_bg4.png) no-repeat;
+	}
+}
 .about_us{
 	padding-top: 144px;
 	> .container{position: relative;z-index: 2;}
@@ -720,8 +733,29 @@ h2{
 }
 .portfolio_block{
 	padding-top: 100px;
+	position: relative;
+	&:after{
+		content: '';
+		display: block;
+		position: absolute;
+		right: 0;
+		top: -200px;
+		width: 274px;
+		height: 604px;
+		z-index: -1;
+		background: url(../images/bg11.png) no-repeat;
+		@include media-breakpoint-down(lg) {
+			content: none;
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		padding-top: 40px;
+	}
 	.slider_portfolio{
 		padding-top: 80px;
+		@include media-breakpoint-down(sm){
+			padding-top: 40px;
+		}
 		.item{
 			a{
 				position: relative;
@@ -765,6 +799,26 @@ h2{
 }
 .delivery_block{
 	padding-top: 140px;
+	position: relative;
+	&:before{
+		width: 743px;
+		height: 1215px;
+		content: '';
+		position: absolute;
+		top: -150px;
+		left: 0;
+		z-index: -1;
+		background:url(../images/bg12.png) no-repeat;
+		@include media-breakpoint-down(lg) {
+			content: none;
+		}
+	}
+	@include media-breakpoint-down(md) {
+		padding-top: 80px;
+	}
+	@include media-breakpoint-down(sm) {
+		padding-top: 30px;
+	}
 	.bg-light_orange{
 		min-height: 500px;
 	}
@@ -791,13 +845,13 @@ h2{
 		}
 	}
 }
+
 .delivery_option{
-	width: 600px;
-	height: 600px;
+	width: 440px;
+	height: 440px;
 	position: absolute;
 	top: 50%;
-	right: -50%;
-	right: -350px;
+	right: -250px;
 	z-index: 2;
 	transform:translateY(-50%);
 
@@ -906,6 +960,7 @@ h2{
 	background:url(../images/bg_company.jpg) 50% 50% no-repeat;
 	background-size: cover;
 	padding: 110px 0;
+	
 	.hld{
 		border: 2px solid #ffc400;
 	}
@@ -926,11 +981,64 @@ h2{
 	span{
 		font:30px/32px 'Akrobat_black';
 	}
+	@include media-breakpoint-down(lg) {
+		p{
+			font-size: 18px;
+			line-height: 22px;
+		}
+		strong{
+			font-size: 80px;
+			line-height: 82px;
+		}
+		span{
+			font-size: 25px;
+			line-height: 27px;
+		}
+	}
+	@include media-breakpoint-down(md) {
+		margin-top: 80px;
+		padding: 80px 0;
+	}
+	@include media-breakpoint-down(sm) {
+		margin-top: 40px;
+		padding: 30px 0;
+	}
 }
 .team_block{
 	padding-top: 120px;
+	position: relative;
+	&:before{
+		content: '';
+		position: absolute;
+		left: 50%;
+		top: -210px;
+		transform:translateX(-50%);
+		width: 1049px;
+		height: 1071px;
+		z-index: -1;
+		background:url(../images/bg13.png) no-repeat;
+	}
+	&:after{
+		content: '';
+		position: absolute;
+		bottom: -150px;
+		left: 0;
+		z-index: -1;
+		background: url(../images/bg14.png) no-repeat;
+		width: 205px;
+		height: 317px;
+	}
+	@include media-breakpoint-down(lg) {
+		&:before,&:after{content:none;}
+	}
 	h2{
 		padding-bottom: 100px;
+	}
+	img{
+		display: block;
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
 	}
 	.person_item{
 		color: #282828;
@@ -938,12 +1046,6 @@ h2{
 		padding-bottom: 50px;
 		padding-top: 40px;
 		position: relative;
-		img{
-			display: block;
-			max-width: 100%;
-			height: auto;
-			margin: 0 auto;
-		}
 		&:after{
 			content: '';
 			width: 99999px;
@@ -965,6 +1067,25 @@ h2{
 			padding-top: 8px;
 		}
 	}
+	@include media-breakpoint-down(md) {
+		padding-top: 30px;
+	}
+	@include media-breakpoint-down(lg) {
+		padding-top: 80px;
+		h2{
+			padding-bottom: 50px;
+		}
+		img{
+			max-width: 80%;
+		}
+		.person_item{
+			padding-top: 10px;
+			padding-bottom: 15px;
+			&:after{
+				left: -50%;
+			}
+		}
+	}
 }
 .review_block{
 	padding-top: 120px;
@@ -973,5 +1094,152 @@ h2{
 		img{
 			border: 2px solid #ffc400;
 		}
+	}
+	@include media-breakpoint-down(lg) {
+		padding-top: 80px;
+		@include media-breakpoint-down(md) {
+			padding-top: 30px;
+			.review_slider {
+				padding-top: 30px;
+			}
+		}
+	}
+}
+@include media-breakpoint-down(xs) {
+	.btn{
+		font-size: 17px;
+	}
+}
+.label_block{
+	margin-top: 80px;
+	background: #383331;
+	padding: 80px 30px;
+	position: relative;
+	&:after{
+		content: '';
+		position: absolute;
+		right: 0;
+		top: -400px;
+		background:url(../images/bg15.png) no-repeat;
+		width: 325px;
+		height: 665px;
+		z-index: -1;
+	}
+	@include media-breakpoint-down(lg) {
+		padding: 30px;
+		&:after{content: none;}
+	}
+	@include media-breakpoint-down(md) {
+		margin-top: 30px;
+	}
+	.owl-item{
+		display: inline-block;
+		vertical-align: middle;
+		float: none !important;
+	}
+	.owl-nav{
+		padding: 0;
+		button{
+			position: absolute;
+			top: 50%;
+			left: -55px;
+			margin: 0;
+			transform:translateY(-50%);
+			border: 0 !important;
+			&.owl-next{
+				left: auto;
+				right: -55px;
+			}
+		}
+	}
+	.item{
+		a{
+			display: block;
+		}
+		img{
+			max-width: 100% !important;
+			display: block;
+			height: auto;
+			width: auto !important;
+			margin: 0 auto;
+		}
+	}
+}
+.map_block{
+	width: 100%;
+	height: 580px;
+	@include media-breakpoint-down(lg)  {
+		height: 400px;
+	}
+	@include media-breakpoint-down(md)  {
+		height: 300px;
+	}
+	@include media-breakpoint-down(sm)  {
+		height: 200px;
+	}
+}
+.home_page{
+	.main{
+		padding-bottom: 0;
+	}
+}
+.custom_checkbox{
+	[type="checkbox"]:not(:checked),
+	[type="checkbox"]:checked {
+		position: absolute;
+		left: -9999px;
+	}
+	[type="checkbox"]:not(:checked) + label,
+	[type="checkbox"]:checked + label {
+		position: relative;
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: normal;
+		cursor: pointer;
+		padding-left: 25px;
+		&:before{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 18px;
+			height: 18px;
+			border: 1px solid #eddca1;
+			background: #ffedb3;
+			border-radius: 4px;
+		}
+		&:after{
+			content: "\f00c";
+			position: absolute;
+			top: 2px;
+			left: 2px;
+			font-size: 15px;
+			color: #ffc400;
+			color: #fff;
+			color: #000;
+			transition: all .2s;
+			font-family: FontAwesome;
+		}
+	}
+	[type="checkbox"]:not(:checked) + label:after {
+		opacity: 0;
+		transform: scale(0);
+	}
+	[type="checkbox"]:checked + label:after {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+.form-group{
+	margin-bottom: 22px;
+}
+.form-control{
+	border-color: #eddca1 !important;
+	font-size: 18px;
+	color: #383331;
+	padding: 9px 20px 10px;
+	&:focus{
+		border-color: #ffc400 !important;
+		border-radius: 3px !important;
 	}
 }
