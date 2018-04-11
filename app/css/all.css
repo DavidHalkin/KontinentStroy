@@ -687,6 +687,8 @@ h2 .styled_bg:before { top: -20px; }
 
 .company_block { margin-top: 160px; background: url(../images/bg_company.jpg) 50% 50% no-repeat; -webkit-background-size: cover; background-size: cover; padding: 110px 0; }
 
+.company_block .number { font-style: normal; }
+
 .company_block .hld { border: 2px solid #ffc400; }
 
 .company_block p { margin: 5px 0 0 0; font-size: 20px; line-height: 24px; color: #fff; }
