@@ -15,7 +15,7 @@ h1,h2{
 }
 h2{
 	font-size: 42px;
-	line-height: 46px;
+	line-height: 60px;
 	.styled_bg{
 		&:before{
 			top: -20px;
@@ -199,7 +199,7 @@ h2{
 }
 .type_block{
 	padding-top: 157px;
-	overflow: hidden;
+	// overflow: hidden;
 	@include media-breakpoint-down(md) {
 		padding-top: 60px;
 	}
@@ -1241,5 +1241,113 @@ h2{
 	&:focus{
 		border-color: #ffc400 !important;
 		border-radius: 3px !important;
+	}
+}
+.box_item.content_tab{
+	border-width: 2px;
+	h3{
+		font:700 20px/22px $font-family-base;
+	}
+	img{
+		max-width: 80%;
+	}
+	.item_data{
+		width: 80%;
+	}
+	.box_item_info{
+		padding-top: 80px;
+	}
+	.box_item_prev h3{
+		padding-bottom: 40px;
+	}
+	@include media-breakpoint-down(md) {
+		padding-top: 30px;
+	}
+}
+.container_tabs{
+	padding-bottom: 100px;
+	.one_item{
+		margin-bottom: 50px;
+		&:first-of-type{
+			margin-top: 90px;
+		}
+		@include media-breakpoint-down(md) {
+			&:first-of-type {
+				margin-top: 30px;
+			}
+			&:last-of-type {
+				margin-bottom: 15px;
+			}
+		}
+	}
+	@include media-breakpoint-down(md) {
+		padding-bottom: 50px;
+	}
+}
+.param{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	i{
+		display: inline-block;
+		position: absolute;
+		bottom: 5px;
+		left: 0;
+	}
+	li{
+		position: relative;
+		padding-left: 54px;
+		margin-bottom: 35px;
+		font-size: 22px;
+		line-height: 24px;
+		color: #383331;
+	}
+	@include media-breakpoint-down(sm) {
+		display: table;
+		margin: 0 auto;
+	}
+}
+.custom_tabset{
+	li{
+		width: 25%;
+		text-align: center;
+	}
+	a{
+		font:38px/40px 'Akrobat_black';
+		color: #000;
+		text-transform: uppercase;
+		padding: 46px 5px 53px;
+		border-radius: 0 !important;
+	}
+	& .nav-link.active,
+	& .show > .nav-link{
+		background: #ffcd26;
+		color: #000;
+	}
+	@include media-breakpoint-down(lg) {
+		a{
+			padding: 20px 5px;
+			font-size: 30px;
+			line-height: 32px;
+		}
+	}
+	@include media-breakpoint-down(md) {
+		a{
+			padding: 15px 5px;
+			font-size: 25px;
+			line-height: 27px;
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		a{
+			font-size: 20px;
+			line-height: 22px;
+		}
+	}
+	@include media-breakpoint-down(xs) {
+		a{
+			font-size: 14px;
+			line-height: 16px;
+		}
 	}
 }
