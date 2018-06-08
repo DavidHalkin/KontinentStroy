@@ -8,7 +8,10 @@ $(document).ready(function(){
         $(this).toggleClass("active");
         $(".drop_bar_js").toggleClass("active");
     });
-
+    $(".close_drop_js").click(function(){
+        $(".drop_bar_js").removeClass("active");
+        $(".btn_menu_js").removeClass("active");
+    });
     // go to  about 
         $(".go_next").on("click", function(e){
 	        var anchor = $(this);
