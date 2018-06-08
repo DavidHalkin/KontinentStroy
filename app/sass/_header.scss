@@ -63,6 +63,12 @@
 		}
 		.etc{
 			margin-top: 10px;
+			> span{
+				display: none;
+			}
+		}
+		.btn_menu{
+			margin-top: 5px;
 		}
 	}
 }
@@ -160,8 +166,9 @@
 
 	}
 	@include media-breakpoint-down(xs) {
-		max-height: calc(100vh - 107px);
+		max-height: calc(100vh - 60px);
 	}
+
 	&.active{
 		display: block;
 	}
