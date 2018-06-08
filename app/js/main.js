@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    $(window).on("scroll touchmove", function () {
+    $('.header').toggleClass('scrolled', $(document).scrollTop() > 0);
+});
     $(".tabs_js li a").click(function(){
         $(this).parent().toggleClass("active");
         $(this).parent().siblings("li").removeClass("active");
