@@ -10,10 +10,14 @@ $(document).ready(function(){
     $(".btn_menu_js").click(function(){
         $(this).toggleClass("active");
         $(".drop_bar_js").toggleClass("active");
+        $(".header").toggleClass("white_header");
+        $("body").toggleClass("overflow_hidden");
     });
     $(".close_drop_js").click(function(){
         $(".drop_bar_js").removeClass("active");
         $(".btn_menu_js").removeClass("active");
+        $(".header").removeClass("white_header");
+        $("body").removeClass("overflow_hidden");
     });
     // go to  about 
         $(".go_next").on("click", function(e){

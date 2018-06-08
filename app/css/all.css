@@ -226,7 +226,13 @@
 
 @media (max-width: 991.98px) and (max-width: 575.98px) { .etc span { margin-bottom: 0; } }
 
-.drop_bar { position: absolute; z-index: 200; top: 100%; left: 0; width: 100%; background: #fff; padding: 103px 65px 63px; display: none; }
+.drop_bar { position: absolute; z-index: 200; top: 100%; left: 0; width: 100%; background: #fff; padding: 103px 65px 63px; display: none; max-height: -webkit-calc(100vh - 181px); max-height: calc(100vh - 181px); overflow-y: auto; overflow-x: hidden; }
+
+@media (max-width: 991.98px) { .drop_bar { max-height: -webkit-calc(100vh - 166px); max-height: calc(100vh - 166px); } }
+
+@media (max-width: 767.98px) { .drop_bar { max-height: -webkit-calc(100vh - 128px); max-height: calc(100vh - 128px); } }
+
+@media (max-width: 575.98px) { .drop_bar { max-height: -webkit-calc(100vh - 107px); max-height: calc(100vh - 107px); } }
 
 .drop_bar.active { display: block; }
 
@@ -398,15 +404,15 @@
 
 @media (max-width: 575.98px) { .cart_box { position: static; } }
 
-.scrolled { background: white !important; }
+.white_header, .scrolled { background: white !important; }
 
-.scrolled:after { content: '' !important; }
+.white_header:after, .scrolled:after { content: '' !important; }
 
-.scrolled .btn_menu, .scrolled .cart_box, .scrolled .logo span, .scrolled .etc span a, .scrolled .etc span i { color: #000 !important; }
+.white_header .btn_menu, .white_header .cart_box, .white_header .logo span, .white_header .etc span a, .white_header .etc span i, .scrolled .btn_menu, .scrolled .cart_box, .scrolled .logo span, .scrolled .etc span a, .scrolled .etc span i { color: #000 !important; }
 
-.scrolled .cart_box:hover { color: #ffc400 !important; }
+.white_header .cart_box:hover, .scrolled .cart_box:hover { color: #ffc400 !important; }
 
-.scrolled .cart_box:hover b { background: #000 !important; color: #fff !important; }
+.white_header .cart_box:hover b, .scrolled .cart_box:hover b { background: #000 !important; color: #fff !important; }
 
 h1, h2 { font-family: 'Akrobat_black'; }
 
@@ -1060,5 +1066,7 @@ h2 .styled_bg:before { top: -20px; }
 .main + .contact_map { margin-top: -108px; }
 
 @media (max-width: 991.98px) { .main + .contact_map { margin-top: -50px; } }
+
+.overflow_hidden { overflow: hidden; }
 
 /*# sourceMappingURL=all.css.map */
