@@ -90,13 +90,15 @@ h2{
 		}
 	}
 }
+.text-black{
+	color: #353131 !important;
+}
 .banner_title{
 	position: relative;
 	z-index: 2;
 	background-size: cover !important;
 	background-position: 50% 50% !important;
 	min-height: 490px;
-
 	h1{
 		margin: 0;
 		width: 100%;
@@ -499,16 +501,16 @@ h2{
 .main{
 	padding-bottom: 108px;
 	overflow: hidden;
-	padding-top: 181px;
+	padding-top: 84px;
 	@include media-breakpoint-down(md) {
 		padding-bottom: 50px;
-		padding-top: 168px;
+		// padding-top: 168px;
 	}
 	@include media-breakpoint-down(sm) {
-		padding-top: 131px;
+		// padding-top: 131px;
 	}
 	@include media-breakpoint-down(xs){
-		padding-top: 60px;
+		padding-top: 49px;
 	}
 }
 .home_page{
@@ -1222,8 +1224,8 @@ h2{
 	[type="checkbox"]:not(:checked) + label,
 	[type="checkbox"]:checked + label {
 		position: relative;
-		font-size: 14px;
-		line-height: 16px;
+		font-size: 12px;
+		line-height: 14px;
 		font-weight: normal;
 		cursor: pointer;
 		padding-left: 25px;
@@ -1231,7 +1233,7 @@ h2{
 			content: '';
 			position: absolute;
 			left: 0;
-			top: 0;
+			top: -2px;
 			width: 18px;
 			height: 18px;
 			border: 1px solid #eddca1;
@@ -1241,7 +1243,7 @@ h2{
 		&:after{
 			content: "\f00c";
 			position: absolute;
-			top: 2px;
+			top: 0;
 			left: 2px;
 			font-size: 15px;
 			color: #ffc400;
@@ -1261,13 +1263,14 @@ h2{
 	}
 }
 .form-group{
-	margin-bottom: 22px;
+	margin-bottom: 15px;
 }
 .form-control{
 	border-color: #eddca1 !important;
-	font-size: 18px;
+	font-size: 12px;
 	color: #383331;
-	padding: 9px 20px 10px;
+	padding: 9px 13px 10px;
+	padding: 6px 13px 7px;
 	&:focus{
 		border-color: #ffc400 !important;
 		border-radius: 3px !important;
@@ -1574,18 +1577,21 @@ h2{
 		}
 	}
 }
+.cl_cnt_center{
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
 .contact_inf{
-	font-size: 25px;
-	line-height: 27px;
+	font-size: 16px;
+	line-height: 18px;
 	color: #000;
-	padding:127px 0 138px;
+	padding:54px 0 92px;
 	.cl{
-		// flex: 0 0 20%;
-		// max-width: 20%;
 		position: relative;
 		&:after{
-			width: 2px;
-			height: 140px;
+			width: 1px;
+			height: 92px;
 			background: #000;
 			position: absolute;
 			top: 30px;
@@ -1604,14 +1610,14 @@ h2{
 	}
 	i{
 		display:block;
-		margin: 0 auto 27px;
+		margin: 0 auto 25px;
 	}
 	@media screen and (max-width: 1200px) {
 		.cl{
 			flex-grow: 1;
 			max-width: 100%;
 			flex-basis: 0;
-			font-size: 20px;
+			// font-size: 20px;
 		}
 	}
 	@media screen and (max-width: 768px) {
@@ -1635,9 +1641,9 @@ h2{
 .contact_map{
 	background: #ffc400;
 	h3{
-		font:30px/40px 'Akrobat_black';
+		font:20px/28px 'Akrobat_black';
 		color: #342f2d;
-		margin: 0 0 56px 0;
+		margin: 0 0 36px 0;
 	}
 	#map{
 		width: 100%;
@@ -1650,12 +1656,13 @@ h2{
 		}
 	}
 	.col_frm{
-		padding:76px 60px 35px 0 !important;
+		padding:52px 124px 45px 0 !important;
 		.col-form-label{
-			font-size: 20px;
+			font-size: 14px;
 			font-weight: bold;
+			padding-right: 0;
 		}
-		@include media-breakpoint-down(lg){
+		@media screen and (max-width: 1600px){
 			padding-right: 30px !important;
 		}
 		@include media-breakpoint-down(md){
