@@ -80,6 +80,26 @@ $('.owl_carousel_js_3').owlCarousel({
         }
     }
 })
+// long gall
+$('.long_gal_js').owlCarousel({
+    loop:false,
+    margin:0,
+    responsiveClass:true,
+    nav:true,
+    dots: false,
+    navText : ["<i class='fa fa-angle-left' aria-hidden='true'></i>","<i class='fa fa-angle-right' aria-hidden='true'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        500:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
 // review portdolio
 $('.owl_carousel_js_4').owlCarousel({
     loop:true,
