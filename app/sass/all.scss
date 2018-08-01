@@ -3378,20 +3378,24 @@ p.p_ico{
 			flex-grow: 1;
 			max-width: 100%;
 			flex-basis: 0;
-			min-width: auto;
+			
 			margin: 0 1px;
-
+			@media screen and (max-width:550px){
+				flex: 1 1 auto;
+			}
 			a{
 				padding: 10px 3px 10px;
 				border: 1px solid #dbd8d8;
 				height: 70px;
-				display: flex;
-				align-items:center;
-				justify-content:center;
 				font-size: 26px;
 				line-height: 26px;
 				color: #ffc400;
 				font-weight: 500;
+
+				display: flex;
+				align-items:center;
+				justify-content:center;
+				max-width: 100%;
 				@include media-breakpoint-down(md) {
 					font-size: 18px;
 					line-height: 20px;
